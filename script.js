@@ -11,21 +11,6 @@ function welcomeStudent() {
     alert("Hello " + name + "!  Welcome to Javascript.")
     console.log("A student visited the website.")
 }
-for (let a = 1; a <= 30; a++) {
-    if (a % 3 === 0 && a % 5 === 0) {
-        console.log("Chai and Mandazi")
-    }
-    else if (a % 3 === 0) {
-        console.log("chai")
-    }
-    else if (a % 5 === 0) {
-        console.log("Mandazi")
-    }
-    else {
-        console.log(a)
-    }
-}
-
 
 let goal = 10000;
 let month = 1;
@@ -49,5 +34,19 @@ while (total < goal) {
 }
 
 console.log(`Goal reached in month ${month - 1} with KES ${total}!`);
+for (let a = 1; a <= 30; a++) {
+    if (a % 3 === 0 && a % 5 === 0) {
+        console.log("Chai and Mandazi")
+    }
+    else if (a % 3 === 0) {
+        console.log("chai")
+    }
+    else if (a % 5 === 0) {
+        console.log("Mandazi")
+    }
+    else {
+        console.log(a)
+    }
+}
 
 
