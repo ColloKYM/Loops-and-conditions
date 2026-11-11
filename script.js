@@ -12,25 +12,27 @@ function welcomeStudent() {
     console.log("A student visited the website.")
 }
 
-let goal = 10000;
+let goal = 5000;
 let month = 1;
 let saving = 100;
 let total = 0;
 
 while (total < goal) {
-     if (month > 24) {
+    if (month > 24) {
+        console.log('Safety stp: the goal was not reached within 24 months.')
         break;
     }
     total = total + saving;
-    month = month + 1;
-    saving = saving + 50;
+
     if (saving >= 500) {
         console.log(`Month ${month}: saved KES ${saving}, total KES ${total} - Big month!`);
     } else {
         console.log(`Month ${month}: saved KES ${saving}, total KES ${total}`);
     }
 
-    
+    month = month + 1;
+    saving = saving + 50;
+
 }
 
 console.log(`Goal reached in month ${month - 1} with KES ${total}!`);
@@ -48,5 +50,7 @@ for (let a = 1; a <= 30; a++) {
         console.log(a)
     }
 }
+
+
 
 
